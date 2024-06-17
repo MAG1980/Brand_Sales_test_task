@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c343b5b-fd9a-45a8-bb97-16fb394b25d8" name="Changes" comment="Установлен Vue.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="8c343b5b-fd9a-45a8-bb97-16fb394b25d8" name="Changes" comment="Добавлен .env с настройками подключения к API.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/backend/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/backend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +21,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
   <component name="ProjectColorInfo">{
@@ -28,18 +32,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "ts.external.directory.path": "/home/alexey/PhpstormProjects/Brand_Sales_test_task/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -73,7 +78,7 @@
       <workItem from="1718660547342" duration="4709000" />
       <workItem from="1718665364963" duration="130000" />
       <workItem from="1718665519137" duration="125000" />
-      <workItem from="1718665670870" duration="832000" />
+      <workItem from="1718665670870" duration="1916000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -115,7 +120,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718666371346</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавлен .env с настройками подключения к API.">
+      <option name="closed" value="true" />
+      <created>1718666609757</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718666609757</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Добавлен .env с настройками подключения к API.">
+      <option name="closed" value="true" />
+      <created>1718666640172</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718666640172</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +158,7 @@
     <MESSAGE value="Создан TurboRepo." />
     <MESSAGE value="Установлен NestJS." />
     <MESSAGE value="Установлен Vue." />
-    <option name="LAST_COMMIT_MESSAGE" value="Установлен Vue." />
+    <MESSAGE value="Добавлен .env с настройками подключения к API." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен .env с настройками подключения к API." />
   </component>
 </project>
