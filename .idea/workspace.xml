@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c343b5b-fd9a-45a8-bb97-16fb394b25d8" name="Changes" comment="Initial commit." />
+    <list default="true" id="8c343b5b-fd9a-45a8-bb97-16fb394b25d8" name="Changes" comment="Создан TurboRepo." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +70,7 @@
       <workItem from="1718660547342" duration="4709000" />
       <workItem from="1718665364963" duration="130000" />
       <workItem from="1718665519137" duration="125000" />
+      <workItem from="1718665670870" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -87,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718665438625</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Создан TurboRepo.">
+      <option name="closed" value="true" />
+      <created>1718665729979</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718665729979</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +115,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
+    <MESSAGE value="Создан TurboRepo." />
+    <option name="LAST_COMMIT_MESSAGE" value="Создан TurboRepo." />
   </component>
 </project>
