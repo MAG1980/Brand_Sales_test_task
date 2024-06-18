@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c343b5b-fd9a-45a8-bb97-16fb394b25d8" name="Changes" comment="Создана заготовка LeadModule с сервисом и контроллером.">
+      <change afterPath="$PROJECT_DIR$/apps/backend/src/lead/dto/get-leads.dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/backend/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/lead.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/lead.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/lead.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/lead.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/backend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +26,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -35,7 +40,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "/home/alexey/PhpstormProjects/Brand_Sales_test_task/apps/backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -43,7 +51,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "vcs.Git",
-    "ts.external.directory.path": "/home/alexey/PhpstormProjects/Brand_Sales_test_task/node_modules/typescript/lib",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2023.1.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -84,6 +92,7 @@
       <workItem from="1718665364963" duration="130000" />
       <workItem from="1718665519137" duration="125000" />
       <workItem from="1718665670870" duration="4257000" />
+      <workItem from="1718709585665" duration="6221000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />

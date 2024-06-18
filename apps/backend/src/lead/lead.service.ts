@@ -1,15 +1,22 @@
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from "@nestjs/config";
+import {GetLeadsDto} from "./dto/get-leads.dto";
 
 @Injectable()
 export class LeadService {
   constructor(private readonly configService: ConfigService) {}
 
-  async fetchLeads() {
+  async fetchLeads(getLeadssDto:GetLeadsDto) {
+    const { query } = getLeadssDto
+
+    const params = query ? `?query=${query}` : ''
+
+    getLeadssDto.query = getLeadssDto.query || ''
+    
     const domain =
       this.configService.getOrThrow('API_DOMAIN')
-    console.log({domain})
-    const url = `https://${domain}/api/v4/leads`
+
+    const url = `https://${domain}/api/v4/leads${params}`
 
     const res = await fetch(url,{
       method: 'GET',
