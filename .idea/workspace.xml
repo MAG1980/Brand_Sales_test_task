@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c343b5b-fd9a-45a8-bb97-16fb394b25d8" name="Changes" comment="Добавлен .env с настройками подключения к API.">
+    <list default="true" id="8c343b5b-fd9a-45a8-bb97-16fb394b25d8" name="Changes" comment="Создана заготовка LeadModule с сервисом и контроллером.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/backend/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/backend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/lead.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/lead.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/lead.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/lead.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +36,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/alexey/PhpstormProjects/Brand_Sales_test_task/apps/backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,6 +56,9 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/backend" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/apps" />
       <recent name="$PROJECT_DIR$" />
@@ -78,7 +83,7 @@
       <workItem from="1718660547342" duration="4709000" />
       <workItem from="1718665364963" duration="130000" />
       <workItem from="1718665519137" duration="125000" />
-      <workItem from="1718665670870" duration="1916000" />
+      <workItem from="1718665670870" duration="4257000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -136,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718666640172</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Создана заготовка LeadModule с сервисом и контроллером.">
+      <option name="closed" value="true" />
+      <created>1718667888343</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718667888343</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +172,7 @@
     <MESSAGE value="Установлен NestJS." />
     <MESSAGE value="Установлен Vue." />
     <MESSAGE value="Добавлен .env с настройками подключения к API." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен .env с настройками подключения к API." />
+    <MESSAGE value="Создана заготовка LeadModule с сервисом и контроллером." />
+    <option name="LAST_COMMIT_MESSAGE" value="Создана заготовка LeadModule с сервисом и контроллером." />
   </component>
 </project>
