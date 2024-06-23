@@ -6,7 +6,8 @@ import { GetLeadsDto } from '@backend/lead/dto/get-leads.dto';
 export class LeadController {
   constructor(private readonly leadService: LeadService) {}
   @Get()
-  async findAll(@Query() getLeadssDto: GetLeadsDto) {
-    return await this.leadService.getData(getLeadssDto);
+  async findAll(@Query() getLeadsDto: GetLeadsDto) {
+    const data = await this.leadService.getData(getLeadsDto);
+    return data;
   }
 }

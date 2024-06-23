@@ -1,7 +1,7 @@
-import { PipelineEntity } from '@backend/lead/entities/pipeline.entity';
+import { Pipeline } from '@backend/lead/interfaces/pipeline.interface';
 
 export interface PipelinesResponse {
   _embedded: {
-    pipelines: PipelineEntity[];
+    pipelines: Pipeline[];
   };
 }

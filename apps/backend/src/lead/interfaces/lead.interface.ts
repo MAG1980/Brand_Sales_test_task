@@ -1,7 +1,7 @@
 import { ContactEntity } from '@backend/lead/entities/contact.entity';
 
-export class LeadEntity {
-  /*  id: number;
+export interface Lead {
+  id: number;
   name: string;
   price: number;
   responsible_user_id: number;
@@ -10,5 +10,5 @@ export class LeadEntity {
   created_at: number;
   _embedded: {
     contacts: ContactEntity[];
-  };*/
+  };
 }
