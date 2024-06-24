@@ -46,18 +46,25 @@ export class LeadService {
           (value) => value.field_name === 'Email',
         )?.values,
       };
-      console.log(clearedContact.phones);
+
       return new ContactEntity(clearedContact);
     });
 
-    const ebededPipilines = data.pipelines.map((pipeline) => {
-      const leads = data.leads.filter(
+    const embeddedLeads = data.leads.map((lead) => {
+      const contacts = lead.contacts.map((leadContact) => {
+        return newContacts.find((contact) => contact.id === leadContact.id);
+      });
+      return { ...lead, contacts };
+    });
+
+    const embeddedPipilines = data.pipelines.map((pipeline) => {
+      const leads = embeddedLeads.filter(
         (lead) => lead.pipeline_id === pipeline.id,
       );
       return new PipelineEntity({ ...pipeline, leads });
     });
 
-    return { ...data, pipelines: ebededPipilines, contacts: newContacts };
+    return { ...data, pipelines: embeddedPipilines, contacts: newContacts };
   }
   async fetchLeads(getLeadsDto: GetLeadsDto) {
     const { query } = getLeadsDto;
