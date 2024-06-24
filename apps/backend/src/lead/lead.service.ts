@@ -64,7 +64,14 @@ export class LeadService {
       const leads = embeddedLeads.filter(
         (lead) => lead.pipeline_id === pipeline.id,
       );
-      return new PipelineEntity({ ...pipeline, leads });
+
+      const leadsWithStautuses = leads.map((lead) => {
+        const status = pipeline.statuses.find(
+          (status) => status.id === lead.status_id,
+        );
+        return { ...lead, status };
+      });
+      return new PipelineEntity({ ...pipeline, leads: leadsWithStautuses });
     });
 
     return { ...data, pipelines: embeddedPipilines, contacts: newContacts };
