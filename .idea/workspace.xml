@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c343b5b-fd9a-45a8-bb97-16fb394b25d8" name="Changes" comment="В свойство leads ответа добавлена подробная информация о каждом контакте.">
+    <list default="true" id="8c343b5b-fd9a-45a8-bb97-16fb394b25d8" name="Changes" comment="Описан интерфейс ответа API.">
+      <change afterPath="$PROJECT_DIR$/apps/backend/src/lead/interfaces/api-response.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/lead.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/lead.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/lead.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/lead.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719263214576</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="В свойство leads ответа добавлена подробная информация статусе сделки.">
+      <option name="closed" value="true" />
+      <created>1719264351779</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1719264351779</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +230,8 @@
     <MESSAGE value="Настроено получение данных о воронках, сделках, статусах сделок, пользователях." />
     <MESSAGE value="Настроен вывод сделок, воронок, пользователей и контактов." />
     <MESSAGE value="В свойство leads ответа добавлена подробная информация о каждом контакте." />
-    <option name="LAST_COMMIT_MESSAGE" value="В свойство leads ответа добавлена подробная информация о каждом контакте." />
+    <MESSAGE value="В свойство leads ответа добавлена подробная информация статусе сделки." />
+    <MESSAGE value="Описан интерфейс ответа API." />
+    <option name="LAST_COMMIT_MESSAGE" value="Описан интерфейс ответа API." />
   </component>
 </project>

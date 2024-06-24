@@ -12,12 +12,13 @@ import { ContactEntity } from '@backend/lead/entities/contact.entity';
 import { UserEntity } from '@backend/lead/entities/user.entity';
 import { PipelineEntity } from '@backend/lead/entities/pipeline.entity';
 import { LeadEntity } from '@backend/lead/entities/lead.entity';
+import { ApiResponse } from '@backend/lead/interfaces/api-response.interface';
 
 @Injectable()
 export class LeadService {
   constructor(private readonly configService: ConfigService) {}
 
-  async getData(getLeadsDto: GetLeadsDto) {
+  async getData(getLeadsDto: GetLeadsDto): Promise<ApiResponse> {
     const promiseLeads = this.fetchLeads(getLeadsDto);
     const promisePipelines = this.fetchPipelines();
     const promiseUsers = this.fetchUsers();
@@ -76,6 +77,7 @@ export class LeadService {
 
     return { ...data, pipelines: embeddedPipilines, contacts: newContacts };
   }
+
   async fetchLeads(getLeadsDto: GetLeadsDto) {
     const { query } = getLeadsDto;
 
@@ -123,7 +125,7 @@ export class LeadService {
       },
     });
     const data: PipelinesResponse = await res.json();
-    const pipelines = data._embedded.pipelines.map((pipeline) => ({
+    return data._embedded.pipelines.map((pipeline) => ({
       id: pipeline.id,
       name: pipeline.name,
       statuses: pipeline._embedded.statuses.map(
@@ -136,7 +138,6 @@ export class LeadService {
           }),
       ),
     }));
-    return pipelines;
   }
 
   async fetchUsers() {
