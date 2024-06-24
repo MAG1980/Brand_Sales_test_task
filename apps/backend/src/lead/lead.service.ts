@@ -54,7 +54,10 @@ export class LeadService {
       const contacts = lead.contacts.map((leadContact) => {
         return newContacts.find((contact) => contact.id === leadContact.id);
       });
-      return { ...lead, contacts };
+      const responsibleUser = data.users.find(
+        (user) => user.id === lead.responsible_user_id,
+      );
+      return { ...lead, contacts, responsibleUser };
     });
 
     const embeddedPipilines = data.pipelines.map((pipeline) => {

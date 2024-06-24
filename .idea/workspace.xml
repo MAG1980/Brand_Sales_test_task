@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c343b5b-fd9a-45a8-bb97-16fb394b25d8" name="Changes" comment="Настроен вывод сделок, воронок, пользователей и контактов.">
+    <list default="true" id="8c343b5b-fd9a-45a8-bb97-16fb394b25d8" name="Changes" comment="В свойство leads ответа добавлена подробная информация о каждом контакте.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/lead.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/lead.service.ts" afterDir="false" />
     </list>
@@ -184,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719230448199</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="В свойство leads ответа добавлена подробная информация о каждом контакте.">
+      <option name="closed" value="true" />
+      <created>1719263214576</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1719263214576</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +219,7 @@
     <MESSAGE value="В ответ API добавлены данные о контактах, прикреплённых к сделкам." />
     <MESSAGE value="Настроено получение данных о воронках, сделках, статусах сделок, пользователях." />
     <MESSAGE value="Настроен вывод сделок, воронок, пользователей и контактов." />
-    <option name="LAST_COMMIT_MESSAGE" value="Настроен вывод сделок, воронок, пользователей и контактов." />
+    <MESSAGE value="В свойство leads ответа добавлена подробная информация о каждом контакте." />
+    <option name="LAST_COMMIT_MESSAGE" value="В свойство leads ответа добавлена подробная информация о каждом контакте." />
   </component>
 </project>
