@@ -10,6 +10,8 @@ import { StatusEntity } from '@backend/lead/entities/status.entity';
 import { ContactsResponse } from '@backend/lead/interfaces/contacts-response.interface';
 import { ContactEntity } from '@backend/lead/entities/contact.entity';
 import { UserEntity } from '@backend/lead/entities/user.entity';
+import { PipelineEntity } from '@backend/lead/entities/pipeline.entity';
+import { LeadEntity } from '@backend/lead/entities/lead.entity';
 
 @Injectable()
 export class LeadService {
@@ -48,7 +50,14 @@ export class LeadService {
       return new ContactEntity(clearedContact);
     });
 
-    return { ...data, contacts: newContacts };
+    const ebededPipilines = data.pipelines.map((pipeline) => {
+      const leads = data.leads.filter(
+        (lead) => lead.pipeline_id === pipeline.id,
+      );
+      return new PipelineEntity({ ...pipeline, leads });
+    });
+
+    return { ...data, pipelines: ebededPipilines, contacts: newContacts };
   }
   async fetchLeads(getLeadsDto: GetLeadsDto) {
     const { query } = getLeadsDto;
@@ -72,16 +81,18 @@ export class LeadService {
     });
     const data: LeadsResponse = await res.json();
 
-    return data._embedded.leads.map((lead) => ({
-      id: lead.id,
-      name: lead.name,
-      price: lead.price,
-      status_id: lead.status_id,
-      responsible_user_id: lead.responsible_user_id,
-      pipeline_id: lead.pipeline_id,
-      created_at: lead.created_at,
-      contacts: lead._embedded.contacts,
-    }));
+    return data._embedded.leads.map((lead) => {
+      return new LeadEntity({
+        id: lead.id,
+        name: lead.name,
+        price: lead.price,
+        status_id: lead.status_id,
+        responsible_user_id: lead.responsible_user_id,
+        pipeline_id: lead.pipeline_id,
+        created_at: lead.created_at,
+        contacts: lead._embedded.contacts,
+      });
+    });
   }
 
   async fetchPipelines() {

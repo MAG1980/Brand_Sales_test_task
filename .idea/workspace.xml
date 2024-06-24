@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c343b5b-fd9a-45a8-bb97-16fb394b25d8" name="Changes" comment="Настроено получение данных о воронках, сделках, статусах сделок, пользователях.">
-      <change afterPath="$PROJECT_DIR$/apps/backend/src/lead/interfaces/contact.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/backend/src/lead/interfaces/contacts-response.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/backend/src/lead/interfaces/lead.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/backend/src/lead/interfaces/pipeline.interface.ts" afterDir="false" />
+    <list default="true" id="8c343b5b-fd9a-45a8-bb97-16fb394b25d8" name="Changes" comment="Настроен вывод сделок, воронок, пользователей и контактов.">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/entities/contact.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/entities/contact.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/entities/lead.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/entities/lead.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/entities/pipeline.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/entities/pipeline.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/entities/status.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/entities/status.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/entities/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/entities/user.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/interfaces/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/interfaces/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/interfaces/leads-response.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/interfaces/leads-response.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/interfaces/pipelines-response.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/interfaces/pipelines-response.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/lead.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/lead.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/backend/src/lead/lead.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/src/lead/lead.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,23 +35,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/home/alexey/PhpstormProjects/Brand_Sales_test_task/apps/backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "ts.external.directory.path": "H:\\WebDev\\Brand_Sales_test_task\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alexey/PhpstormProjects/Brand_Sales_test_task/apps/backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;H:\\WebDev\\Brand_Sales_test_task\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -190,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1719153830002</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Настроен вывод сделок, воронок, пользователей и контактов.">
+      <created>1719230448199</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1719230448199</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +213,7 @@
     <MESSAGE value="Создана заготовка LeadModule с сервисом и контроллером." />
     <MESSAGE value="В ответ API добавлены данные о контактах, прикреплённых к сделкам." />
     <MESSAGE value="Настроено получение данных о воронках, сделках, статусах сделок, пользователях." />
-    <option name="LAST_COMMIT_MESSAGE" value="Настроено получение данных о воронках, сделках, статусах сделок, пользователях." />
+    <MESSAGE value="Настроен вывод сделок, воронок, пользователей и контактов." />
+    <option name="LAST_COMMIT_MESSAGE" value="Настроен вывод сделок, воронок, пользователей и контактов." />
   </component>
 </project>
