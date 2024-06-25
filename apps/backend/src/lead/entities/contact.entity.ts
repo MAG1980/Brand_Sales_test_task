@@ -1,3 +1,5 @@
+import { ContactData } from '@backend/lead/interfaces/contact-data.interface';
+
 export class ContactEntity {
   constructor({ id, name, responsible_user_id, phones, emails }) {
     this.id = id;
@@ -10,6 +12,6 @@ export class ContactEntity {
   id: number;
   name: string;
   responsible_user_id: number;
-  phones: string[];
-  emails: string[];
+  phones: ContactData[];
+  emails: ContactData[];
 }

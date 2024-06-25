@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-import Pipelines from "@/components/Pipelines.vue";
+import Pipelines from "@frontend//components/Pipelines.vue";
 </script>
 
 <template>
