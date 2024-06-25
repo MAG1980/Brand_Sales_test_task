@@ -28,5 +28,11 @@ export class LeadEntity {
   status_id: number;
   pipeline_id: number;
   created_at: number;
+  responsibleUser: {
+    id: number;
+    name: string;
+    email: string;
+    lang: string;
+  };
   contacts: ContactEntity[];
 }
